@@ -2,10 +2,9 @@
 {
     internal class ItManager : Cfo
     {
-        private protected int _salary = 160000 / 12;
-
         public ItManager(string firstName, string lastName, uint cpr) : base(firstName, lastName, cpr)
         {
+            _salary = 160000 / 12;
             _firstName = firstName;
             _lastName = lastName;
             _cpr = cpr;
