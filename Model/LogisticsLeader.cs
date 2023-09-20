@@ -1,12 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Firm2.Model
+﻿namespace Firm2.Model
 {
-    internal class Class1
+    internal class LogisticsLeader : LogisticsManager
     {
+        public LogisticsLeader(string firstName, string lastName, uint cpr) : base(firstName, lastName, cpr)
+        {
+            _salary = 110000 / 12;
+            _firstName = firstName;
+            _lastName = lastName;
+            _cpr = cpr;
+        }
     }
 }
